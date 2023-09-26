@@ -1,42 +1,43 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    <link rel="stylesheet" href="./css/estilos.css">
-    <script src="./js/calculadora.js"></script>
+    <title>Rutina Gimnasio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+
 </head>
+
 <body>
-    <div class="calculadora">
-        <input type="text" id="display" readonly>
-        
-
-        <button class="numero" onclick="agregarNumero(1)">1</button>
-        <button class="numero" onclick="agregarNumero(2)">2</button>
-        <button class="numero" onclick="agregarNumero(3)">3</button>
-        <button class="borrar" onclick="borrarUltimoDigito()">←</button>
-        <button class="borrar" onclick="limpiarDisplay()">CE</button>
- 
-
-        
-        <button class="numero" onclick="agregarNumero(4)">4</button>
-        <button class="numero" onclick="agregarNumero(5)">5</button>
-        <button class="numero" onclick="agregarNumero(6)">6</button>
-        <button class="operador" onclick="agregarOperador('-')">-</button>
-        <button class="operador" onclick="agregarOperador('*')">*</button>
-        
-        <button class="numero" onclick="agregarNumero(7)">7</button>
-        <button class="numero" onclick="agregarNumero(8)">8</button>
-        <button class="numero" onclick="agregarNumero(9)">9</button>
-        <button class="operador" onclick="agregarOperador('+')">+</button>
-        <button class="operador" onclick="agregarOperador('/')">/</button>
-        
-       <br>
-        <button class="numero" onclick="agregarNumero(0)">0</button>
-        <button class="decimal" onclick="agregarDecimal()">.</button>
-        <button class="operador" onclick="calcularResultado()">=</button>
-        
+    <header>
+        <h1>Rutina gimnasio Betianita</h1>
+    </header>
+    <hr>
+    <main>
+        <div class="ejercicios">
+            <ul>
+                <li>Ejercicio 1</li>
+                <li>Ejercicio 2</li>
+                <li>Ejercicio 3</li>
+            </ul>
+            <ul>
+                <li>Ejercicio 4</li>
+                <li>Ejercicio 5</li>
+                <li>Ejercicio 6</li>
+            </ul>
+        </div>
+    </main>
+    <hr>
+<div class="timer">
+    <span id="timer">00:00</span>
+</div>
+    <div class="timer">
+        <button onclick="startTimer()">Comenzar</button>
+        <button onclick="stopTimer()">Parar</button>
+        <button onclick="resetTimer()">Reiniciar</button>
     </div>
+
 </body>
+<script src="./js/Timers.js"></script>
+
 </html>
